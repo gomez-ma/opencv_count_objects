@@ -97,7 +97,7 @@ def format_yolov5(frame):
     result[0:row, 0:col] = frame
     return result
 
-def main(video_source=""):
+def main(video_source="people.mp4"):
     colors = [(255, 255, 0), (0, 255, 0), (0, 255, 255), (255, 0, 0)]
     is_cuda = len(sys.argv) > 1 and sys.argv[1] == "cuda"
     net = build_model(is_cuda)
